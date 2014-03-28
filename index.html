@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Quick Bars Demo</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="quickbars.js"></script>
+</head>
+<body>
+	<h1>Quick Bars Example</h1>
+	<p>Here are a few examples and what options they use.</p>
+	<!-- Empty divs with ids -->
+	<p>Padding, labels color and font size.</p>
+	<div id="chart"></div>
+	<p>Bold labels.</p>
+	<div id="chart1"></div>
+	<p>Some margin and no animation.</p>
+	<div id="chart2"></div>
+	<script>
+	$(function(){
+	//Calling the function with or without options
+		$( "#chart" ).quickBars({
+			data: [{"name":"Attack", "size": 40},
+			       {"name":"Defense", "size": 20},
+			       {"name":"Spell Power", "size": 34.2}
+			      ],
+			bar_padding: "13px 10px",
+			lables_color: 'orange',
+			font_size: "30px"
+		});
+
+		$( "#chart1" ).quickBars({
+			data: [{"name":"Attack", "size": 53},
+			       {"name":"Defense", "size": 4},
+			       {"name":"Spell Power", "size": 3}
+			      ],
+			bold: true
+		});
+		$( "#chart2" ).quickBars({
+			data: [{"name":"Eggs", "size": 20},
+			       {"name":"Beef", "size": 50},
+			       {"name":"Chocolate", "size": 56},
+			       {"name":"Marshmallows", "size": 100},
+			       {"name":"Bread", "size": 40}
+			      ],
+			bar_margin: 10,
+			animated: false
+		});
+	});
+	</script>
+</body>
+</html>
