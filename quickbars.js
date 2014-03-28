@@ -17,7 +17,8 @@ $(function() {
       bar_shadows: 'inset 0 -1px 15px #000',
       font_size: "inherit",
       bold: false,
-      tooltips: true
+      tooltips: true,
+      animated: true
 	  }, options );
 
 	    //Create bars
