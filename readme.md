@@ -23,8 +23,10 @@ I deliberately chose to do the styling within the script, because I don't enjoy 
 * `data` - this is the only mandatory option for the plugin to work
 * `animated ` - boolean - if false the horizontal bars won't display an animation on load
 * `tooltips ` - boolean - sets whether the bars will use their name value as tooltips
+* `units ` - string - at the momen this setting accepts only **percent** and **pixels**
 
 ### Cosmetic ###
+* `markings` - boolean - enables or disables the 0, 50 and 100% markings, leaving only the bars
 * `container_margin` - string - sets the margin of the target element
 * `bar_margin` - integer - sets margin between bars
 * `bar_padding ` - string - sets padding inside the bars
@@ -35,8 +37,7 @@ I deliberately chose to do the styling within the script, because I don't enjoy 
 
 ## To be done ##
 Like I said this needs a lot of work. For example:
-* Add some markings to the chart, at least for 0, 50 and 100%.
+* Increase customization and public access to defaults
 * The user should be able to choose the units the bars will take for width, rather than have percentage of parent width.
-* Clean up syntax and add further customization.
 * Add the ability to display values.
 * Lots more that I can't think of now...
